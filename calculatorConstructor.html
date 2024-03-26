@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculatorConstructor.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body>
+    <div class="calculator">
+      <input
+        type="text"
+        id="display"
+        class="form-control mb-4"
+        onkeydown="calculator.keyDown(event)"
+      />
+      <div class="numbers-operators-wrap">
+        <div class="row mb-2">
+          <div class="col">
+            <button
+              onclick="calculator.add_display(1);"
+              class="btn btn-warning"
+            >
+              1
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display(2);"
+              class="btn btn-warning"
+            >
+              2
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display(3);"
+              class="btn btn-warning"
+            >
+              3
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display('+');"
+              class="btn btn-secondary operator-btn"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col">
+            <button
+              onclick="calculator.add_display(4);"
+              class="btn btn-warning"
+            >
+              4
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display(5);"
+              class="btn btn-warning"
+            >
+              5
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display(6);"
+              class="btn btn-warning"
+            >
+              6
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display('-');"
+              class="btn btn-secondary operator-btn"
+            >
+              -
+            </button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col">
+            <button
+              onclick="calculator.add_display(7);"
+              class="btn btn-warning"
+            >
+              7
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display(8);"
+              class="btn btn-warning"
+            >
+              8
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display(9);"
+              class="btn btn-warning"
+            >
+              9
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display('*');"
+              class="btn btn-secondary operator-btn"
+            >
+              *
+            </button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col">
+            <button
+              onclick="calculator.add_display(0);"
+              class="btn btn-warning"
+            >
+              0
+            </button>
+          </div>
+          <div class="col">
+            <button onclick="calculator.delete();" class="btn btn-danger">
+              C
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.calculate(); calculator.displayHistory();"
+              class="btn btn-primary"
+            >
+              =
+            </button>
+          </div>
+          <div class="col">
+            <button
+              onclick="calculator.add_display('/');"
+              class="btn btn-secondary operator-btn"
+            >
+              /
+            </button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col">
+            <button
+              onclick="calculator.useLastResult();"
+              class="btn btn-primary"
+            >
+              ANS
+            </button>
+          </div>
+          <div class="col">
+            <button onclick="calculator.clearDisplay();" class="btn btn-danger">
+              AC
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="history" class="mt-3 calcHistory"></div>
+    </div>
+    <script src="calculatorConstructor.js"></script>
+  </body>
+</html>
