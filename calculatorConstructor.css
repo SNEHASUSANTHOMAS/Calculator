@@ -21,13 +21,11 @@
   .btn {
     width: 100%;
     height: 50px;
-    font-size: 20px;
     margin-bottom: 10px;
+   
   }
 
-  .operator-btn {
-    text-align: center;
-  }
+
   .calculator {
     background-color: rgb(54, 49, 49);
   }

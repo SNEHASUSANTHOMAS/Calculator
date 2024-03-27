@@ -132,8 +132,11 @@
             </button>
           </div>
           <div class="col">
-            <button onclick="calculator.delete();" class="btn btn-danger">
-              C
+            <button
+              onclick="calculator.add_display('.');"
+              class="btn btn-warning"
+            >
+              .
             </button>
           </div>
           <div class="col">
@@ -160,6 +163,11 @@
               class="btn btn-primary"
             >
               ANS
+            </button>
+          </div>
+          <div class="col">
+            <button onclick="calculator.delete();" class="btn btn-danger">
+              C
             </button>
           </div>
           <div class="col">
